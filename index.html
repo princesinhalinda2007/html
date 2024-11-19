@@ -1,20 +1,109 @@
-<DOCTYPE html>
-<html>
-    
- <head>
-<meta charset="utf-8">
-<meta name="viewport" content="widht=device-width, initial-scale=1.0">
-<title>AluraBooks</title>
-<link rel="stylesheet" href="styles.css">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros de Romance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f7f6;
+        }
+        header {
+            background-color: #d05c66;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            margin: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: #d05c66;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .book {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 15px;
+            padding: 15px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .book img {
+            width: 100%;
+            border-radius: 8px;
+            height: 300px;
+            object-fit: cover;
+        }
+        .book h3 {
+            margin: 15px 0;
+            color: #333;
+        }
+        .book p {
+            color: #666;
+            font-size: 0.9em;
+        }
+        footer {
+            background-color: #d05c66;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-<header class="cabeçalho">
-<span class="cabeçalho__menu-hamburguer"></span>
-<img src="img/Logo.svg" alt="logo da Alurabooks">
-<a href="#"><img src="img/Favoritos.svg"></a>
-<a href="#"><img src="img/compras.svg"></a>
-<a href="#"><img src="img/Usuario.svg"></a>
-</header>
-</body>
+    <header>
+        <h1>Livros de Romance</h1>
+    </header>
+    <nav>
+        <a href="#destaques">Destaques</a>
+        <a href="#novidades">Novidades</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <section class="container" id="destaques">
+        <div class="book">
+            <img src=https://intrinseca.com.br/wp-content/uploads/2023/05/CAPA_ParaTodosOsGarotosQueJaAmei_G.jpg alt="Capa do livro 1">
+            <h3>Para todos os garotos que já amei</h3>
+            <p>Lara Jean guarda suas cartas de amor em uma caixa azul-petróleo que ganhou da mãe. Não são cartas que ela recebeu de alguém, mas que ela mesma escreveu. Uma para cada garoto que amou — cinco ao todo. São cartas sinceras, sem joguinhos nem fingimentos, repletas de coisas que Lara Jean não diria a ninguém, confissões de seus sentimentos mais profundos.</p>
+        </div>
+        <div class="book">
+            <img src="https://m.media-amazon.com/images/I/81Q11TuUR3L._AC_UF1000,1000_QL80_.jpg" alt="Capa do livro 2">
+            <h3>A cinco passos de você </h3>
+            <p>Stella Grant gosta de estar no controle. Ela parece ser uma adolescente típica, mas em sua rotina há listas de tarefas e inúmeros remédios que ela deve tomar para controlar a fibrose cística, uma doença crônica que impede que seus pulmões funcionem como deveriam. Suas prioridades são manter seus pais felizes e conseguir um transplante – e uma coisa não existe sem a outra. Mas para ganhar pulmões novos, Stella precisa seguir seu tratamento à risca e eliminar qualquer chance de infecção, o que significa que ela não pode ficar a menos que dois metros de distância – ou seis passos – de outros pacientes com a doença. O primeiro item é fácil para ela, mas o segundo pode se provar mais difícil do que ela esperava.</p>
+        </div>
+        <div class="book">
+            <img src=https://br.web.img2.acsta.net/pictures/19/03/22/22/06/4810618.jpg alt="Capa do livro 3">
+            <h3>O sol também é uma estrela</h3>
+            <p>Natasha (Yara Shahidi) é uma jovem extremamente pragmática, que apenas acredita em fatos explicados pela ciência e descarta por completo o destino. Em menos de 24 horas, a família de Natasha será deportada para a Jamaica, mas antes que isso aconteça ela por acaso encontra Daniel (Charles Melton), que a salva de ser atropelada. Decidido a convencê-la que o encontro de ambos foi obra do destino, Daniel a desafia a passar um dia com ele, no qual tem a missão de fazê-la se apaixonar.
 
+                .</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Livros de Romance. Todos os direitos reservados.</p>
+    </footer>
+</body>
 </html>
+

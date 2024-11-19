@@ -1,10 +1,82 @@
-:root {
-    --cor-de-fundo: #c2f0ed;
-}
-
+/* Estilo geral */
 body {
-    background-color: var(--cor-de-fundo)
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f7f6;
 }
 
+/* Cabeçalho */
+header {
+    background-color: #d05c66;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Navegação */
+nav {
+    margin: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #d05c66;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Container dos livros */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.book {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book img {
+    width: 100%;
+    border-radius: 8px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.book h3 {
+    margin: 15px 0;
+    color: #333;
+}
+
+.book p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Rodapé */
+footer {
+    background-color: #d05c66;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
 }
